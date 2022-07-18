@@ -35,4 +35,25 @@ def init_vars():
     direction = "RIGHT"
     head_pos = [120, 60]
     snake_pody = [120, 60]
-    food_pos = [random.randrange(1, (frame_size_x // ))]
+    food_pos = [random.randrange(1, (frame_size_x // square_size)) * square_size,
+                random.randrange(1, (frame_size_y // square_size)) * square_size]
+    food_spawn = True
+    score = 0 
+
+init_vars)
+)
+
+def show_score():
+    print("Showing Score")
+
+#gameplay 
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        else if event.type = pygame.KEYDOWN:
+            if(event.key == pygame.K_UP or event.key == org("w")
+            and direction != "DOWN"):
+            direction = "UP"
