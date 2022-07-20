@@ -55,17 +55,14 @@ while True:
             sys.exit()
         elif event.type == pygame.KEYDOWN:
             if(event.key == pygame.K_UP or event.key == ord("w")
+                and direction != "DOWN"):
+                 direction = "UP"
+            elif (event.key == pygame.K_DOWN or event.key == ord("s")
+                 and direction != "UP"):
+                  direction = "DOWN"
+             elif (event.type == pygame.KEYDOWN:event.key == pygame.K_UP or event.key == ord("w")
             and direction != "DOWN"):
             direction = "UP"
-        elif event.type == pygame.KEYDOWN:
-            if(event.key == pygame.K_UP or event.key == ord("w")
-            and direction != "DOWN"):
-            direction = "UP"
-        elif event.type == pygame.KEYDOWN:
-            if(event.key == pygame.K_UP or event.key == ord("w")
-            and direction != "DOWN"):
-            direction = "UP"
-        elif event.type == pygame.KEYDOWN:
-            if(event.key == pygame.K_UP or event.key == ord("w")
+            elif (event.type == pygame.KEYDOWN: event.key == pygame.K_UP or event.key == ord("w")
             and direction != "DOWN"):
             direction = "UP"
