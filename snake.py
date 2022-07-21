@@ -60,9 +60,9 @@ while True:
             elif (event.key == pygame.K_DOWN or event.key == ord("s")
                  and direction != "UP"):
                   direction = "DOWN"
-             elif (event.type == pygame.KEYDOWN:event.key == pygame.K_UP or event.key == ord("w")
-            and direction != "DOWN"):
-            direction = "UP"
-            elif (event.type == pygame.KEYDOWN: event.key == pygame.K_UP or event.key == ord("w")
-            and direction != "DOWN"):
-            direction = "UP"
+             elif (event.type == pygame.K_LEFT or event.key == ord("a")
+                 and direction != "RIGHT"):
+                 direction = "LEFT"
+            elif (event.type == pygame.K_RIGHT or event.key == ord("d")
+                and direction != "RIGHT"):
+                direction = "RIGHT"
