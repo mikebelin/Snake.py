@@ -75,3 +75,11 @@ while True:
         head_pos[0] -= square_size
     else:
         head_pos[0] += square_size
+
+
+    if head_pos[0] < 0: 
+        head_pos[0] = frame_size_x - square_size
+    elif head_pos[0] > frame_size_x - square_size
+        head_pos[0] = 0
+    elif head_pos[1] < 0:
+        head
